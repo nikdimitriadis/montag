@@ -53,7 +53,7 @@ clicks.forEach((click, index) => {
   }
 });
 
-let firstIn = `    <section class="about">
+let firstIn = `  <section class="about">
 <div class="about-one">
   <h1>Go beyond music. Immerse your senses through vibration.</h1>
   <img src="images/img2/section-about-1.jpg" alt="" />
