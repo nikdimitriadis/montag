@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling  */
+h1,
+h2,
+h4,
+h5,
+h6 {
+  color: rgb(234, 204, 194);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+p {
+  color: rgb(115, 115, 115);
+  font-size: 1.5em;
+}
+/* ================== */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Work Sans", sans-serif;
+  background-color: #2e2e2e;
+  line-height: 1.5;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* left fixed nav */
+
+.left_nav {
+  position: fixed;
+  top: 60%;
+  transform: translateY(-50%);
+  margin-left: 4rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left_ul {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items:center */
+}
+
+.left_ul li {
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.left_ul li::before {
+  content: " ";
+  width: 1px;
+  height: 60%;
+  position: absolute;
+  background-color: #867772;
+  top: 18px;
+  left: -20px;
+}
+
+.container {
+  position: relative;
+  color: #867772;
+  font-size: 1.2rem;
+}
+
+.container a {
+  color: #867772;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.container a:hover {
+  color: white;
+}
+
+.container a.cW {
+  color: white;
+}
+
+.left_ul li:last-child:before {
+  content: " ";
+  width: 0px;
+  height: 0px;
+}
+
+.shit {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+  display: grid;
+  place-items: center;
+}
+
+.div1 {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #867772;
+  border-radius: 50%;
+  position: absolute;
+}
+
+/* clas + selected */
+.left_ul .cW + .shit {
+  border-color: white;
+}
+
+/* top nav */
+.mar-bot {
+  margin-bottom: 2rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  max-width: 1440px;
+  width: 100%;
+  padding: 2rem 4% 0 4rem;
+}
+
+.nav a {
+  color: #867772;
+}
+
+/* Icon top Navbar */
+.navigation-chev {
+  position: relative;
+  transition: all 0.4s;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navigation-chev.rotated {
+  transform: rotate(-90deg);
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .navigation-chev {
+    display: none;
+  }
+}
+
+/* UL FROM NAVIGATION BAR ON TOP */
+.choices {
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  transition: all 1s ease-in-out;
+  text-align: center;
+}
+
+.choices.choice-size.hiden {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* li && a Skin */
+.choices li {
+  list-style: none;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.choices li:hover a {
+  color: rgb(234, 204, 194);
+  border-bottom: 2px solid rgb(234, 204, 194);
+  transition: all 0.5s;
+}
+
+/* apostasi fb de */
+
+.choices li:nth-child(4),
+.choices li:first-child {
+  padding-right: 5%;
+}
+
+.choices a {
+  text-decoration: none;
+  font-size: bold;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 780px) {
+  .choices {
+    flex-direction: row;
+    justify-content: end;
+    padding: 0px;
+    flex: 1;
+  }
+  .choices li {
+    transition: all 0.4s;
+  }
+
+  .choices.choice-size.hiden {
+    max-height: 100%;
+    opacity: 1;
+  }
+}
+/*Navigation Nav Navigation nav*/
+.nav-flex {
+  /* padding: 1rem 0; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 780px) {
+  .nav-flex {
+    padding: 2rem 5% 0 4rem;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+/* anime burg */
+.menu {
+  position: relative;
+}
+
+.menu div {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 3px;
+  transition: all 1s;
+}
+
+.peristrofi1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.peristrofi2 {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.diagrafi {
+  opacity: 0;
+}
+
+/* section 1  */
+
+/* div1 */
+img {
+  width: 100%;
+}
+
+.about .about-one h1 {
+  max-width: 400px;
+  margin: 14% 0 10% 30%;
+}
+
+.about .about-one img {
+  padding: 0 6rem;
+}
+
+/* section div2 */
+
+.about .about-two {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 5%;
+}
+.about .about-two .about-img {
+  width: 50%;
+  margin-left: 10%;
+}
+.about .about-two .content {
+  margin-right: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .about-two .content h2 {
+  margin-bottom: 3rem;
+}
+.about .about-two .content p {
+  margin-bottom: 2rem;
+  width: 85%;
+}
+
+/* same 3 */
+
+.about3 {
+  display: flex;
+  height: 100vh;
+  gap: 3%;
+}
+
+.about3 .same-img {
+  width: 54%;
+}
+
+.about3 .same-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about3 .same-cnt {
+  width: 40%;
+  margin-left: 0%;
+}
+
+.about3 .same-cnt h2 {
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+
+.about3 .same-cnt p {
+  margin-bottom: 2rem;
+  width: 74%;
+}
+
+/* last sec */
+
+.same-center {
+  text-align: center;
+  width: 45%;
+}
+
+.same-center img {
+  margin: 10% 0 5% 0;
+}
+
+.same-center h2 {
+  margin-bottom: 1rem;
+}
+
+.same-center p {
+  margin-bottom: 2rem;
+}
+
+.same-center button {
+  background-color: rgb(234, 204, 194);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border-color: white;
+  border-radius: 3px;
+}
+
+/* polla */
+
+.polla {
+  width: 55%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+video {
+  width: 100%;
+}
+
+.polla .meText {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.polla h3 {
+  color: rgb(234, 204, 194);
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.polla .meText h2 {
+  margin-bottom: 2rem;
+}
+
+.polla .meText span {
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.reverse article {
+  display: flex;
+}
+.reverse article div {
+  width: 50%;
+}
+.reverse article:nth-of-type(2) .tIMG {
+  order: 1;
+}
+
+.lastText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.lastText h2 {
+  margin-bottom: 2rem;
+}
