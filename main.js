@@ -56,11 +56,11 @@ clicks.forEach((click, index) => {
 let firstIn = `    <section class="about">
 <div class="about-one">
   <h1>Go beyond music. Immerse your senses through vibration.</h1>
-  <img src="/images/img2/section-about-1.jpg" alt="" />
+  <img src="images/img2/section-about-1.jpg" alt="" />
 </div>
 <div class="about-two">
   <div class="about-img">
-      <img src="/images/img2/BS1_NYC_Home.webp" alt="" />
+      <img src="images/img2/BS1_NYC_Home.webp" alt="" />
     </div>
   <div class="content">
     <h2>DESIGN ALCHEMY</h2>
@@ -119,7 +119,7 @@ const polla = `   <section class="polla">
 
 
 <div class="video">
-    <video autoplay muted  src="/images/img2/Magical_Home.mp4"></video>
+    <video autoplay muted  src="images/img2/Magical_Home.mp4"></video>
 </div>
 
 
